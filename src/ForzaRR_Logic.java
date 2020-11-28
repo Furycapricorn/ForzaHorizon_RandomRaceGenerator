@@ -1,9 +1,9 @@
 import java.util.*;
-/*
+/** Git
  * This program is used to provide the user with random parameters for a Forza Horizon 4 race.
  * 
  * @author Maximilian Hartmann
- * @version 0.0
+ * @version 0.1
  */
 
 /*
@@ -14,36 +14,41 @@ import java.util.*;
  */
 public class ForzaRR_Logic {
 	private static Map<Integer, String> carClass = new HashMap<Integer, String>(){{
-		put(0, "Sports Utility Heroes");
-		put(1, "Offroad");
-		put(2, "Offroad Buggies");
-		put(3, "Extreme Offroad");
-		put(4, "Cult Classics");
-		put(5, "Rods and Customs");
-		put(6, "Retro Muscle");
-		put(7, "Modern Muscle");
-		put(8, "Vans & Utility");
-		put(9, "Retro Saloons");
-		put(10, "Super Saloons");
-		put(11, "Classic Rally");
-		put(12, "Rally Monsters");
-		put(13, "Retro Rally");
-		put(14, "Modern Rally");
-		put(15, "Retro Hot Hatch");
-		put(16, "Hot Hatch");
-		put(17, "Super Hot Hatch");
-		put(18, "European Sports Cars");
-		put(19, "Asian Sports Cars");
-		put(20, "Classic Racers");
-		put(21, "Rare Classics");
-		put(22, "Retro Supercars");
-		put(23, "GT Cars");
-		put(24, "Super GT");
-		put(25, "Modern Super Cars");
-		put(26, "Hypercars");
-		put(27, "Extreme Track Toys");
-		put(28, "Classic Muscle");
-		
+		put(0, "Sports_Utility_Heroes");	//
+		put(1, "Offroad");					//
+		put(2, "Offroad_Buggies");			//
+		put(3, "Extreme_Offroad");			//
+		put(4, "Cult_Cars"); 			//
+		put(5, "Rods_and_Customs");			//
+		put(6, "Retro_Muscle");				//
+		put(7, "Modern_Muscle");			//
+		put(8, "Vans_&_Utility"); 			//
+		put(9, "Retro_Saloons"); 			//
+		put(10, "Super_Saloons"); 			//
+		put(11, "Classic_Rally");			//
+		put(12, "Rally_Monsters");			//
+		put(13, "Retro_Rally");				//
+		put(14, "Modern_Rally");			//
+		put(15, "Retro_Hot_Hatch");			//
+		put(16, "Hot_Hatch");				//
+		put(17, "Super_Hot_Hatch");			//
+		put(18, "Modern_Sportscars");		//
+		put(19, "Classic_Sportscars");		//
+		put(20, "Tracktoys");				//
+		put(21, "Rare_Classics"); 			//
+		put(22, "Retro_Supercars"); 		//
+		put(23, "GT_Cars");					//
+		put(24, "Super_GT");				//
+		put(25, "Modern_Supercars");		//
+		put(26, "Hypercars");				//
+		put(27, "Extreme_Tracktoys");		//
+		put(28, "Classic_Muscle");			//
+		put(29, "Anithing_Goes");			//
+		put(30, "Hypercars");				//
+		put(31, "Retro_Sportscars"); 		//
+		put(32, "Trucks");			 		//
+		put(33, "Vintage_Racers"); 			//
+		//     
 		
 	}};;
 	final static Map<Integer, String> performanceClass = new HashMap<Integer, String>(){{
@@ -71,17 +76,17 @@ public class ForzaRR_Logic {
 		
 	}
 	
-	private static Map logicTester(){
+	public static Map logicTester(){
 		Map<String, String> randomRace = new HashMap<String, String>();
 		System.out.println("\n-- Generating race type --");
-		randomRace.put("Race Type", raceType.get(getRandomInt(raceType.size()-1)));
-		System.out.println("Race Type: " + randomRace.get("Race Type"));
+		randomRace.put("RT", raceType.get(getRandomInt(raceType.size()-1)));
+		System.out.println("Race Type: " + randomRace.get("RT"));
 		System.out.println("\n-- Generating Car class --");
-		randomRace.put("Car Class", carClass.get(getRandomInt(carClass.size()-1)));
-		System.out.println("Car Class: " + randomRace.get("Car Class"));
+		randomRace.put("CC", carClass.get(getRandomInt(carClass.size()-1)));
+		System.out.println("Car Class: " + randomRace.get("CC"));
 		System.out.println("\n-- Generating performance class -- ");
-		randomRace.put("Performance Class", performanceClass.get(getRandomInt(performanceClass.size()-1)));
-		System.out.println("Performance Class: " + randomRace.get("Performance Class"));
+		randomRace.put("PC", performanceClass.get(getRandomInt(performanceClass.size()-1)));
+		System.out.println("Performance Class: " + randomRace.get("PC"));
 		return randomRace;
 	}
 	

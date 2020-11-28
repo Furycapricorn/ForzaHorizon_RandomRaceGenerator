@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ForzaRR_Gui">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -38,37 +38,37 @@
                   <Font name="Arial Black" size="27.0" />
                </font>
             </Label>
-            <Button layoutX="502.0" layoutY="300.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="84.0" style="-fx-border-color: #FFAF60; -fx-border-width: 2; -fx-border-radius: 3; -fx-background-color: white;" text="Generate">
+            <Button fx:id="forzaGenerateBttn" layoutX="502.0" layoutY="300.0" mnemonicParsing="false" onAction="#forzaGenerate" prefHeight="47.0" prefWidth="84.0" style="-fx-border-color: #FFAF60; -fx-border-width: 2; -fx-border-radius: 3; -fx-background-color: white;" text="Generate">
                <font>
                   <Font name="Arial" size="12.0" />
                </font>
             </Button>
-            <Label layoutX="26.0" layoutY="96.0" text="Race Type:">
+            <Label fx:id="rtLabel" layoutX="26.0" layoutY="96.0" text="Race Type:">
                <font>
                   <Font name="Arial Italic" size="18.0" />
                </font>
             </Label>
-            <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="230.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ccImage" fitHeight="75.0" fitWidth="75.0" layoutX="230.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@unkown.jpg" />
                </image>
             </ImageView>
-            <Label layoutX="26.0" layoutY="194.0" text="Car Class:">
+            <Label fx:id="ccLabel" layoutX="26.0" layoutY="194.0" text="Car Class:">
                <font>
                   <Font name="Arial Italic" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="26.0" layoutY="290.0" prefHeight="21.0" prefWidth="163.0" text="Perfomance Class:">
+            <Label fx:id="pcLabel" layoutX="26.0" layoutY="290.0" prefHeight="21.0" prefWidth="163.0" text="Perfomance Class:">
                <font>
                   <Font name="Arial Italic" size="18.0" />
                </font>
             </Label>
-            <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="230.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="rtImage" fitHeight="75.0" fitWidth="75.0" layoutX="230.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@unkown.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="230.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="pcImage" fitHeight="75.0" fitWidth="75.0" layoutX="230.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@unkown.jpg" />
                </image>
