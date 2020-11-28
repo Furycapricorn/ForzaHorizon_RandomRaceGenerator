@@ -14,11 +14,11 @@ import java.util.*;
  */
 public class ForzaRR_Logic {
 	private static Map<Integer, String> carClass = new HashMap<Integer, String>(){{
-		put(0, "Sports_Utility_Heroes");	//
+		put(0, "Sport_Utility_Heroes");		//
 		put(1, "Offroad");					//
 		put(2, "Offroad_Buggies");			//
 		put(3, "Extreme_Offroad");			//
-		put(4, "Cult_Cars"); 			//
+		put(4, "Cult_Cars"); 				//
 		put(5, "Rods_and_Customs");			//
 		put(6, "Retro_Muscle");				//
 		put(7, "Modern_Muscle");			//
@@ -43,7 +43,7 @@ public class ForzaRR_Logic {
 		put(26, "Hypercars");				//
 		put(27, "Extreme_Tracktoys");		//
 		put(28, "Classic_Muscle");			//
-		put(29, "Anithing_Goes");			//
+		put(29, "Anything_Goes");			//
 		put(30, "Hypercars");				//
 		put(31, "Retro_Sportscars"); 		//
 		put(32, "Trucks");			 		//

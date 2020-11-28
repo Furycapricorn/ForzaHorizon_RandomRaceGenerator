@@ -72,7 +72,7 @@ public class ForzaRR_Gui extends Application {
 	}
 	
 	private void setCarClass(Map m){
-		ccLabel.setText("Car Class: " +m.get("CC"));
+		//ccLabel.setText("Car Class: " +m.get("CC"));
 		Image image = new Image(getClass().getResource(m.get("CC")+".jpg").toExternalForm());
 		ccImage.setImage(image);
 	}
