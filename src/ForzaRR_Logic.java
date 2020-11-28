@@ -69,12 +69,12 @@ public class ForzaRR_Logic {
 	}};;
 	//The main, that starts the Tester
 	
-	public static void main(String[]args){
+	/*public static void main(String[]args){
 		System.out.println("-- Testprogram started --\n\n");
 		logicTester();
 		System.out.println("\n-- Finished --");
 		
-	}
+	}*/
 	
 	public static Map logicTester(){
 		Map<String, String> randomRace = new HashMap<String, String>();
