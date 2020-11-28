@@ -43,10 +43,10 @@ public class ForzaRR_Gui extends Application {
 	protected void forzaGenerate(ActionEvent e) {
 		Map<String, String> generatedRace = ForzaRR_Logic.logicTester();
 		
-		rtLabel.setText(generatedRace.get("RT"));
 		
 		setPerformanceClass(generatedRace);
 		setCarClass(generatedRace);
+		setRaceType(generatedRace);
 		System.out.println("generate");
 	}
 	
@@ -75,6 +75,11 @@ public class ForzaRR_Gui extends Application {
 		//ccLabel.setText("Car Class: " +m.get("CC"));
 		Image image = new Image(getClass().getResource(m.get("CC")+".jpg").toExternalForm());
 		ccImage.setImage(image);
+	}
+	private void setRaceType(Map m){
+		//rtLabel.setText("Racetype: " +m.get("CC"));
+		Image image = new Image(getClass().getResource(m.get("RT")+".jpg").toExternalForm());
+		rtImage.setImage(image);
 	}
 
 	

@@ -64,7 +64,7 @@ public class ForzaRR_Logic {
 		put(0, "Street");
 		put(1, "Dirt");
 		put(2, "Drag");
-		put(3, "Offroad");
+		put(3, "Offroads");
 		put(4, "Urban");
 	}};;
 	//The main, that starts the Tester
