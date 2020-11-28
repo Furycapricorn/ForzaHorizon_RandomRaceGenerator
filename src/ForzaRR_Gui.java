@@ -56,6 +56,7 @@ public class ForzaRR_Gui extends Application {
 		Parent xmlLayout=FXMLLoader.load(getClass().getResource("ForzaRR_Gui.fxml"));
 		Scene scene1= new Scene(xmlLayout);
 		primaryStage.setScene(scene1);
+		primaryStage.setTitle("Forza Horizon Random Racegenerator");
 		primaryStage.show();
 		
 		
