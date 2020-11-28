@@ -34,20 +34,24 @@ public class ForzaRR_Gui extends Application {
 	private Label ccLabel = new Label();
 	@FXML
 	private ImageView pcImage = new ImageView();
+	@FXML
+	private ImageView rtImage = new ImageView();
+	@FXML
+	private ImageView ccImage = new ImageView();
 	
 	@FXML
 	protected void forzaGenerate(ActionEvent e) {
 		Map<String, String> generatedRace = ForzaRR_Logic.logicTester();
-		ccLabel.setText(generatedRace.get("CC"));
+		
 		rtLabel.setText(generatedRace.get("RT"));
 		
 		setPerformanceClass(generatedRace);
-		
+		setCarClass(generatedRace);
 		System.out.println("generate");
 	}
+	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		
 		
 		Parent xmlLayout=FXMLLoader.load(getClass().getResource("ForzaRR_Gui.fxml"));
 		Scene scene1= new Scene(xmlLayout);
@@ -65,6 +69,12 @@ public class ForzaRR_Gui extends Application {
 		//pcLabel.setText("Performance Class: " +m.get("PC"));
 		Image image = new Image(getClass().getResource(m.get("PC")+".jpg").toExternalForm());
 		pcImage.setImage(image);
+	}
+	
+	private void setCarClass(Map m){
+		ccLabel.setText("Car Class: " +m.get("CC"));
+		Image image = new Image(getClass().getResource(m.get("CC")+".jpg").toExternalForm());
+		ccImage.setImage(image);
 	}
 
 	
