@@ -64,9 +64,9 @@ public class ForzaRR_Logic {
 	}};
 	//Mapping of all racetypes in Forza horizon 4
 	private final static Map<Integer, String> raceType = new HashMap<Integer, String>(){{
-		put(0, "Street");
+		put(0, "Drag");
 		put(1, "Dirt");
-		put(2, "Drag");
+		put(2, "Street");
 		put(3, "Offroads");
 		put(4, "Urban");
 	}};;
