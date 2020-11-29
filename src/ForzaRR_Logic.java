@@ -13,7 +13,8 @@ import java.util.*;
  * Leistungsklassen:	7
  */
 public class ForzaRR_Logic {
-	private static Map<Integer, String> carClass = new HashMap<Integer, String>(){{
+	//Mapping of all car classes in Forza Horizon 4
+	private final static Map<Integer, String> carClass = new HashMap<Integer, String>(){{
 		put(0, "Sport_Utility_Heroes");		//
 		put(1, "Offroad");					//
 		put(2, "Offroad_Buggies");			//
@@ -51,7 +52,8 @@ public class ForzaRR_Logic {
 		//     
 		
 	}};;
-	final static Map<Integer, String> performanceClass = new HashMap<Integer, String>(){{
+	//Mapping of all performance classes in Forza Horizon 4
+	private final static Map<Integer, String> performanceClass = new HashMap<Integer, String>(){{
 		put(0, "D");
 		put(1, "C");
 		put(2, "B");
@@ -60,7 +62,8 @@ public class ForzaRR_Logic {
 		put(5, "S2");
 		put(6, "X");
 	}};
-	private static Map<Integer, String> raceType = new HashMap<Integer, String>(){{
+	//Mapping of all racetypes in Forza horizon 4
+	private final static Map<Integer, String> raceType = new HashMap<Integer, String>(){{
 		put(0, "Street");
 		put(1, "Dirt");
 		put(2, "Drag");
@@ -76,7 +79,7 @@ public class ForzaRR_Logic {
 		
 	}*/
 	
-	public static Map logicTester(){
+	public static Map<String, String> logicTester(){
 		Map<String, String> randomRace = new HashMap<String, String>();
 		System.out.println("\n-- Generating race type --");
 		randomRace.put("RT", raceType.get(getRandomInt(raceType.size()-1)));

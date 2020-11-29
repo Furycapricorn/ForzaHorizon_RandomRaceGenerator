@@ -1,6 +1,9 @@
-import java.util.HashMap;
+/* Unused Imports
+ * import java.util.HashMap;
+ * import javafx.collections.*; 
+ * import javafx.scene.control.ChoiceBox;
+*/
 import java.util.Map;
-
 import javafx.application.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -8,16 +11,16 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.collections.*; 
-import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+
 /**
  * Non Git
  * @author Maximilian Hartmann
  * @version 0.1
  */
+
 public class ForzaRR_Gui extends Application {
 	
 	
@@ -66,18 +69,18 @@ public class ForzaRR_Gui extends Application {
 	 * Sets the matching Image to the generated performance class
 	 * @param m A map/dictionary of the generated stuff
 	 */
-	private void setPerformanceClass(Map m){
+	private void setPerformanceClass(Map<String, String> m){
 		//pcLabel.setText("Performance Class: " +m.get("PC"));
 		Image image = new Image(getClass().getResource(m.get("PC")+".jpg").toExternalForm());
 		pcImage.setImage(image);
 	}
 	
-	private void setCarClass(Map m){
+	private void setCarClass(Map<String, String> m){
 		//ccLabel.setText("Car Class: " +m.get("CC"));
 		Image image = new Image(getClass().getResource(m.get("CC")+".jpg").toExternalForm());
 		ccImage.setImage(image);
 	}
-	private void setRaceType(Map m){
+	private void setRaceType(Map<String, String> m){
 		//rtLabel.setText("Racetype: " +m.get("CC"));
 		Image image = new Image(getClass().getResource(m.get("RT")+".jpg").toExternalForm());
 		rtImage.setImage(image);
